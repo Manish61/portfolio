@@ -2,6 +2,14 @@
 <head> 
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @media screen and (max-width: 600px) {
+            .portfolio-section {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>My Portfolio</h1>
@@ -13,5 +21,40 @@
         <li>Projects</li>
         <li>Contact</li>
     </ul>
+    <div class="portfolio-section">
+        <h2>About Me</h2>
+        <p>I am a web developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and functional websites.</p>
+    </div>
 
+    <div class="portfolio-section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Description of Project 3</p>
+        </div>
+    </div>
+
+    <div class="portfolio-section">
+        <h2>Contact</h2>
+        <p>You can reach me at john@example.com</p>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var button = document.getElementById('myButton');
+        button.addEventListener('click', function() {
+            // Perform some action when the button is clicked
+            console.log('Button clicked!');
+        });
+    });
+    </script>
 </body>
+</html>
